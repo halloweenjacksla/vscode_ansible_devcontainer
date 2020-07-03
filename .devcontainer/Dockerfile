@@ -43,10 +43,10 @@ RUN apt-get update \
     # #
     # # [Optional] For local testing instead of cloud shell
     # # Install Docker CE CLI. 
-    # && curl -fsSL https://download.docker.com/linux/$(lsb_release -is | tr '[:upper:]' '[:lower:]')/gpg | apt-key add - 2>/dev/null \
-    # && add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/$(lsb_release -is | tr '[:upper:]' '[:lower:]') $(lsb_release -cs) stable" \
-    # && apt-get update \
-    # && apt-get install -y docker-ce-cli \
+    && curl -fsSL https://download.docker.com/linux/$(lsb_release -is | tr '[:upper:]' '[:lower:]')/gpg | apt-key add - 2>/dev/null \
+    && add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/$(lsb_release -is | tr '[:upper:]' '[:lower:]') $(lsb_release -cs) stable" \
+    && apt-get update \
+    && apt-get install -y docker-ce-cli \
     # #
     # # [Optional] For local testing instead of cloud shell
     # # Install the Azure CLI
