@@ -56,7 +56,7 @@ RUN apt-get update \
     # && apt-get install -y azure-cli \
     #
     # Install Ansible
-    && apt-get install -y libssl-dev libffi-dev python-dev python-pip \
+    && apt-get install -y libssl-dev libffi-dev python-dev python-pip ssh-pass\
     && pip install ansible \
     #
     # Create a non-root user to use if preferred - see https://aka.ms/vscode-remote/containers/non-root-user.
